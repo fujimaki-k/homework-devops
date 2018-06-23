@@ -79,7 +79,7 @@ INSERT INTO authors VALUES
 
 INSERT INTO publishers VALUES
     (1, "Printemps"),
-    (2, "lily White");
+    (2, "lily white");
 
 INSERT INTO books VALUES
     (1, "ファイトだよっ！", 1, 1),
