@@ -1,0 +1,10 @@
+version: "2"
+services:
+  mariadb:
+      build: ./mariadb
+      image: homework/mariadb
+      container_name: mariadb
+      entrypoint: /init.sh
+      ports:
+          - 3306:3306
+

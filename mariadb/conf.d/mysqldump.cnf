@@ -1,0 +1,6 @@
+[mysqldump]
+quick
+quote-names
+default-character-set = binary
+max_allowed_packet    = 16M
+
