@@ -25,9 +25,9 @@ CREATE TABLE IF NOT EXISTS books (
     author_id INTEGER NOT NULL COMMENT "著者 ID",
     publisher_id INTEGER NOT NULL COMMENT "出版社 ID",
 
-    PRIMARY KEY(id),
+    PRIMARY KEY(book_id),
     FOREIGN KEY(author_id) REFERENCES authors(author_id) ON UPDATE CASCADE ON DELETE RESTRICT,
-    FOREIGN KEY(author_id) REFERENCES publishers(publisher_id) ON UPDATE CASCADE ON DELETE RESTRICT
+    FOREIGN KEY(publisher_id) REFERENCES publishers(publisher_id) ON UPDATE CASCADE ON DELETE RESTRICT
 ) Engine = InnoDB;
 
 
