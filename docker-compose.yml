@@ -6,5 +6,14 @@ services:
       container_name: mariadb
       entrypoint: /init.sh
       ports:
-          - 3306:3306
+        - 3306:3306
+  application:
+    build: ./application
+    image: homework/application
+    container_name: homework
+    entrypoint: /init.sh
+    ports:
+      - 8080:8080
+    links:
+      - mariadb
 
